@@ -2,13 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { FormGroupSampleComponent } from './form-group-sample/form-group-sample.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import {ReactiveFormSampleComponent} from "./reactive-form-sample/reactive-form-sample.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormGroupSampleComponent
+    ReactiveFormSampleComponent
   ],
   imports: [
     BrowserModule,

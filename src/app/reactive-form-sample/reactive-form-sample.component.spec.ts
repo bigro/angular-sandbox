@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormGroupSampleComponent } from './form-group-sample.component';
+import { ReactiveFormSampleComponent } from './form-group-sample.component';
 
-describe('FormGroupSampleComponent', () => {
-  let component: FormGroupSampleComponent;
-  let fixture: ComponentFixture<FormGroupSampleComponent>;
+describe('ReactiveFormSampleComponent', () => {
+  let component: ReactiveFormSampleComponent;
+  let fixture: ComponentFixture<ReactiveFormSampleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FormGroupSampleComponent ]
+      declarations: [ ReactiveFormSampleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormGroupSampleComponent);
+    fixture = TestBed.createComponent(ReactiveFormSampleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
