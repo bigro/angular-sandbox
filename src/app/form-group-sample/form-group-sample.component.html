@@ -1,0 +1,12 @@
+<label>
+  Name:
+  <!-- [formControl]にComponentクラスのFormControlでインスタンス化したフィールドを指定するとリアクティブなFormが作れる -->
+  <input type="text" [formControl]="name">
+</label>
+<p>
+  <!--FormControlクラスのvalueで値をモジュール側の値を取得できる-->
+  Value: {{ name.value }}
+</p>
+<p>
+  <button (click)="updateName()">Update Name</button>
+</p>
