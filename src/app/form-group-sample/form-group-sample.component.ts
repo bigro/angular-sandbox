@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl} from "@angular/forms";
+import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-form-group-sample',
@@ -10,15 +10,19 @@ export class FormGroupSampleComponent implements OnInit {
 
   // FormControlでリアクティブなフォームを作れる
   // コンストラクタに初期値を入れれる
-  name = new FormControl('Hoge');
+  // FormGroupで複数のフォームを管理できる
+  profileForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+  });
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  updateName() {
-    this.name.setValue('Nancy');
+  onSubmit() {
+    // TODO: EventEmitterというのを使うと外に出せるらしい
+    console.warn(this.profileForm.value);
   }
-
 }
